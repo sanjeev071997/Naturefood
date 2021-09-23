@@ -1,0 +1,127 @@
+
+:root {
+    --primary: #69ae14;
+    --white: #fff;
+    --black: #222;
+    --grey1: #3a3b3c;
+    --grey2: #828282;
+  }
+.Cart-btn{
+  font-size: 1.5rem;
+  margin-top: 25px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  margin-left: 12px;
+  border-radius: 4px;
+  display: flex;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.clear-cart{
+    border-radius: 4px;
+    margin-top: 15px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    margin-left: 12px;
+    background-color: rgb(235, 45, 45);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.ShoppingCart{
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.plus-item{
+  font-size: 18px;
+}
+
+.minus-item{
+  font-size: 18px;
+}
+
+.delete-item{
+  font-size: 16px;
+}
+
+.item-count{
+  font-size: 1.8rem;
+}
+
+.OrderBtn {
+background-color: var(--primary);
+font-size: 15px;
+padding: 1%;
+color: var(--white);
+font-weight: bold;
+}
+
+.CloseBtn {
+background-color: rgb(235, 45, 45);
+font-size: 15px;
+padding: 1%;
+font-weight: bold;
+color: var(--white);
+}
+
+.TotalPrice{
+  color: red;
+  font-weight: bold;
+}
+
+.modal-title {
+  font-weight: bold;
+  color: yellowgreen;
+}
+
+@media (max-width: 405px) {
+  .plus-item{
+    font-size: 10px;
+  }
+  
+  .minus-item{
+    font-size: 10px;
+  }
+  
+  .delete-item{
+    font-size: 8px;
+  }
+  
+  .item-count{
+    font-size: 1.2rem;
+  }
+  .modal{
+    font-size: 12px;
+  }
+ 
+}
+@media (max-width: 320px) {
+  .plus-item{
+    font-size: 10px;
+  }
+  
+  .minus-item{
+    font-size: 10px;
+  }
+  
+  .delete-item{
+    font-size: 5px;
+  }
+  
+  .item-count{
+    font-size: 10px;
+  }
+    .modal{
+    font-size: 12px;
+  }
+  .modal{
+    font-size: 10px;
+  }
+ 
+}
+

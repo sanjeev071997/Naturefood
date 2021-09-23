@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- ======== Swiper Js ======= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Add to Cart -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+  <!-- Add To Payment -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="payment.css" />
+  <title>#1 online nature Food & Juice Delivery in India | Nature.in </title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="wrapper container">
+      <div class="log">
+        <a href="/">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+
+        <li><a href="index.html">Home</a> </li>
+        <!-- Card/shop -->
+        <li class="icons">
+          <a href="cart.html" class="desktop-item">Shop <span><i class="fas fa-chevron-down"></i></a>
+            <input type="checkbox" id="showdrop1">
+            <label for="showdrop2" class="mobile-item">Shop <span><i class="fas fa-chevron-down"></i></label>
+          <input type="checkbox" id="showdrop2">
+          <label for="showdrop2" class="mobile-item"></label>
+          <ul class="drop-menu2">
+            <li><a href="cart.html">Go to Shopping</a></li>
+            <li><a href="index.html">Go to Home page</a></li>
+          </ul>
+        </span>
+        <li>
+          <a href="" class="desktop-item">Products <span><i class="fas fa-chevron-down"></i></span>
+          </a>
+          <input type="checkbox" id="showMega" />
+          <label for="showMega" class="mobile-item">Shop <span><i class="fas fa-chevron-down"></i></label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="./images/nav.png" alt="nav-image">
+              </div>
+              <!-- Shop Layout -->
+              <div class="row">
+                <header>Shop Layout</header>
+                <ul class="mega-links">
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                </ul>
+              </div>
+              <!-- Product Layout -->
+              <div class="row">
+                <header>Product Layout</header>
+                <ul class="mega-links">
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                </ul>
+              </div>
+              <!-- Filters Layout -->
+              <div class="row">
+                <header>Filters Layout</header>
+                <ul class="mega-links">
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Vendors -->
+        <li>
+          <a href="" class="desktop-item">Vendors <span><i class="fas fa-chevron-down"></i></a>
+          <input type="checkbox" id="showdrop1">
+          <label for="showdrop1" class="mobile-item">Vendors <span><i class="fas fa-chevron-down"></i></label>
+          <ul class="drop-menu1">
+            <li> <a href="">Vendor store listings</a> </li>
+            <li> <a href="">store details</a> </li>
+          </ul>
+        </li>
+    
+        <!-- Page -->
+        <li>
+          <a href="" class="desktop-item">Page <span><i class="fas fa-chevron-down"></i></a>
+          <input type="checkbox" id="showdrop2">
+          <label for="showdrop2" class="mobile-item">Page <span><i class="fas fa-chevron-down"></i></label>
+          <ul class="drop-menu2">
+            <li> <a href="">About</a> </li>
+            <li> <a href="">Contact</a> </li>
+            <li> <a href="">Faq</a> </li>
+            <li> <a href="">Page 404</a> </li>
+
+          </ul>
+        </li>
+         <!-- Blog -->
+         <li><a href="">Blog</a> </li>
+      </ul>
+      <label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+</head>
+
+<body>
+
+<h2>Payment Option</h2>
+
+<div class="row">
+  <div class="col-75">
+    <div class="Paymentcontainer">
+      <form action="#">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" required minlength="3" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" required minlength="@gmail" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" required minlength="8" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" required minlength="3" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required minlength="2" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" required minlength="5" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-Paymentcontainer">
+              <a href="#">
+                <div class="payment-methods">
+                  <img src="./images/payment.png" alt="">
+                </div>
+              </a>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" required minlength="3" placeholder="John More Doe">
+            <label for="ccnum">Credit & Debit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" required minlength="16" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" required minlength="1" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" required minlength="4" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required minlength="3" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+</div>
+ <!-- Footer Section Start -->
+
+ <footer class="section footer" id="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>Extra</h3>
+          <a href="">Featured products</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>Information</h3>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>My Account</h3>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>Contact us</h3>
+          <div>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            48 Dream House, Dreammy Street, 7131 Dreamville, USA
+          </div>
+          <div>
+            <span><i class="far fa-envelope"></i></span>
+            Naturefood12345@gmail.com
+          </div>
+          <div>
+            <span><i class="fas fa-phone"></i></span>
+            4842000101
+          </div>
+          <a href="payment.html">
+            <div class="payment-methods">
+              <img src="./images/payment.png" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Nature Food &copy;2021 | All Rights Reserved!
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Section END -->
+
+</body>
+</html>

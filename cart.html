@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- ======== Swiper Js ======= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Add to Cart -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="cart.css">
+  <title>#1 online nature Food & Juice Delivery in India | Nature.in </title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="wrapper container">
+      <div class="log">
+        <a href="/">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+
+        <li><a href="index.html">Home</a> </li>
+          <!-- Card -->
+          <li class="icons">
+            <a href="cart.html" class="desktop-item">Shop <span><i class="fas fa-chevron-down"></i>
+                <small class="total-count count d-flex">0</small></a>
+              <input type="checkbox" id="showdrop1">
+              <label for="showdrop2" class="mobile-item">Shop <span><i class="fas fa-chevron-down"></i> <small class="total-count count d-flex">0</small></label>
+            <input type="checkbox" id="showdrop2">
+            <label for="showdrop2" class="mobile-item"></label>
+            <ul class="drop-menu2">
+              <li><a href="index.html">Go to Home page</a></li>
+              <li><button type="button" class="Cart-btn" data-toggle="modal" data-target="#cart">Cart( <span
+                    class="total-count"></span>)</button><button class="clear-cart">Clear Cart</button></li>
+            </ul>
+          </span>
+        <li>
+          <a href="" class="desktop-item">Products <span><i class="fas fa-chevron-down"></i></span>
+          </a>
+          <input type="checkbox" id="showMega" />
+          <label for="showMega" class="mobile-item">Products <span><i class="fas fa-chevron-down"></i></label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="./images/nav.png" alt="nav-image">
+              </div>
+              <!-- Shop Layout -->
+              <div class="row">
+                <header>Shop Layout</header>
+                <ul class="mega-links">
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                </ul>
+              </div>
+              <!-- Product Layout -->
+              <div class="row">
+                <header>Product Layout</header>
+                <ul class="mega-links">
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                </ul>
+              </div>
+              <!-- Filters Layout -->
+              <div class="row">
+                <header>Filters Layout</header>
+                <ul class="mega-links">
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                  <li> <a href="">Shop with Background</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <!-- Vendors -->
+        <li>
+          <a href="" class="desktop-item">Vendors <span><i class="fas fa-chevron-down"></i></a>
+          <input type="checkbox" id="showdrop1">
+          <label for="showdrop1" class="mobile-item">Vendors <span><i class="fas fa-chevron-down"></i></label>
+          <ul class="drop-menu1">
+            <li> <a href="">Vendor store listings</a> </li>
+            <li> <a href="">store details</a> </li>
+          </ul>
+        </li>
+        <!-- Page -->
+        <li>
+          <a href="" class="desktop-item">Page <span><i class="fas fa-chevron-down"></i></a>
+          <input type="checkbox" id="showdrop2">
+          <label for="showdrop2" class="mobile-item">Page <span><i class="fas fa-chevron-down"></i></label>
+          <ul class="drop-menu2">
+            <li> <a href="">About</a> </li>
+            <li> <a href="">Contact</a> </li>
+            <li> <a href="">Faq</a> </li>
+            <li> <a href="">Page 404</a> </li>
+          </ul>
+        </li>
+         <!-- Blog -->
+         <li><a href="">Blog</a> </li>
+        
+      </ul>
+      <label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+  <!-- Navigation END -->
+
+  <!-- Featured Section Start -->
+  <section class="section featured">
+    <div class="title">
+      <h2>Featured Products</h2>
+      <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+    </div>
+
+    <div class="row container">
+      <div class="swiper-container slider-2">
+        <div class="swiper-wrapper">
+
+          <a href="#" data-name="Mango" data-price="150" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-1.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">Mango</a>
+                    <span>
+                      <p class="card-text">$150</p>
+                    </span>
+                    <a href="#" data-name="Mango" data-price="150" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+         
+          <a href="#" data-name=" PattaGobhi" data-price="180" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-2.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">PattaGobhi</a>
+                    <span>
+                      <p class="card-text">$180</p>
+                    </span>
+                    <a href="#" data-name=" PattaGobhi" data-price="180" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="kiwi" data-price="210" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-3.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">kiwi</a>
+                    <span>
+                      <p class="card-text">$210</p>
+                    </span>
+                    <a href="#" data-name="kiwi" data-price="210" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="khira" data-price="280" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-4.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">khira</a>
+                    <span>
+                      <p class="card-text">$280</p>
+                    </span>
+                    <a href="#" data-name="khira" data-price="280" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name=" Mushroom" data-price="110" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-5.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">Mushroom</a>
+                    <span>
+                      <p class="card-text">$110</p>
+                    </span>
+                    <a href="#" data-name="mushroom" data-price="110" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="#" data-name="Vegetables" data-price="120" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-6.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">Vegetables</a>
+                    <span>
+                      <p class="card-text">$120</p>
+                    </span>
+                    <a href="#" data-name="Vegetables" data-price="120" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="Bambi Print Mini Fruits" data-price="159" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-7.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">  Fruits </a>
+                    <span>
+                      <p class="card-text">$159</p>
+                    </span>
+                    <a href="#" data-name="BambiPrintMiniFruits" data-price="159" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+         <a href="#" data-name="PattaGobhi" data-price="229" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-8.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">PattaGobhi</a>
+                    <span>
+                      <p class="card-text">$229</p>
+                    </span>
+                    <a href="#" data-name="PattaGobhi" data-price="229" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="Tomato" data-price="250" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-9.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">Tomato</a>
+                    <span>
+                      <p class="card-text">$250</p>
+                    </span>
+                    <a href="#" data-name="Tomato" data-price="250" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="gobhi" data-price="199" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-10.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">gobhi</a>
+                    <span>
+                      <p class="card-text">$199</p>
+                    </span>
+                    <a href="#" data-name="gobhi" data-price="199" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="Khira" data-price="187" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-11.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">Khira</a>
+                    <span>
+                      <p class="card-text">$187</p>
+                    </span>
+                    <a href="#" data-name="Khira" data-price="187" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-name="Pineapple" data-price="287" class="add-to-cart">
+            <div class="swiper-slide container">
+              <div class="product">
+                <div class="img-container">
+                  <img src="./images/product-12.jpg" alt="">
+                  <div class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <ul class="side-icons">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-heart" style="color: red;"></i></span>
+                    <span><i class="fas fa-sliders-h"></i></span>
+                  </ul>
+                </div>
+                <div class="bottom card-block">
+                  <a href="" class="card-title">Pineapple </a>
+                    <span>
+                      <p class="card-text">$287</p>
+                    </span>
+                    <a href="#" data-name="Pineapple" data-price="287" class="add-to-cart btn btn-secondary">Add to
+                      cart</a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Navigation -->
+
+    <div class="arrows d-flex">
+      <div class="custom-prev d-flex">
+        <i class="bx bx-chevrons-left swiper-icon"></i>
+      </div>
+      <div class="custom-next d-flex">
+        <i class="bx bx-chevrons-right swiper-icon"></i>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- Featured Section END -->
+
+  <!-- Products Section Start -->
+
+  <section class="section products">
+    <div class="title">
+      <h2>New Products</h2>
+      <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+    </div>
+
+    <div class="product-layout">
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-13.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Watermelon </a>
+            <span>
+              <p class="card-text">$188</p>
+            </span>
+            <a href="#" data-name="Watermelon" data-price="288" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-14.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title"> Red Chilli </a>
+            <span>
+              <p class="card-text">$108</p>
+            </span>
+            <a href="#" data-name="RedChilli" data-price="288" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-8.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">PattaGobhi </a>
+            <span>
+              <p class="card-text">$122</p>
+            </span>
+            <a href="#" data-name="PattaGobhi" data-price="122" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-3.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Kiwi </a>
+            <span>
+              <p class="card-text">$302</p>
+            </span>
+            <a href="#" data-name="Kiwi" data-price="302" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-7.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Fruit </a>
+            <span>
+              <p class="card-text">$102</p>
+            </span>
+            <a href="#" data-name="Fruit" data-price="102" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-1.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Mango </a>
+            <span>
+              <p class="card-text">$222</p>
+            </span>
+            <a href="#" data-name="Mango" data-price="222" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-9.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+        <a href="" class="card-title">Tomato </a>
+          <span>
+            <p class="card-text">$187</p>
+          </span>
+          <a href="#" data-name="Tomato" data-price="187" class="add-to-cart btn btn-secondary">Add to
+            cart</a>
+      </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-11.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">KHIRA </a>
+            <span>
+              <p class="card-text">$108</p>
+            </span>
+            <a href="#" data-name="KHIRA" data-price="108" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-5.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Mushroom</a>
+            <span>
+              <p class="card-text">$111</p>
+            </span>
+            <a href="#" data-name="Mushroom" data-price="111" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-2.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Gobhi</a>
+            <span>
+              <p class="card-text">$80</p>
+            </span>
+            <a href="#" data-name="Gobhi" data-price="80" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-6.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Vegetables</a>
+            <span>
+              <p class="card-text">$180</p>
+            </span>
+            <a href="#" data-name="vegetables" data-price="180" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="img-container">
+          <img src="./images/product-12.jpg" alt="">
+          <div class="addCart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <ul class="side-icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-heart" style="color: red;"></i></span>
+            <span><i class="fas fa-sliders-h"></i></span>
+          </ul>
+        </div>
+        <div class="bottom card-block">
+          <a href="" class="card-title">Pineapple</a>
+            <span>
+              <p class="card-text">$380</p>
+            </span>
+            <a href="#" data-name="pineapple" data-price="380" class="add-to-cart btn btn-secondary">Add to
+              cart</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content"> 
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Shopping Cart 😍</h2>
+          <button type="button" class="close" style="font-size: 30px;" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            <a href="cart.html" class="ShoppingCart">Go To Shopping  </a>
+          </table> 
+          <div class="TotalPrice">Total price: $<span class="total-cart"></span></div> 
+        </div>
+        <div class="modal-footer">
+          <a href="" data-dismiss="modal" class="CloseBtn btn btn-secondary">Close</a>
+          <a href="payment.html" class="OrderBtn btn btn-secondary" name="Order Now" >Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Products Section END -->
+
+  <!-- Footer Section Start -->
+
+  <footer class="section footer" id="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>Extra</h3>
+          <a href="">Featured products</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>Information</h3>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>My Account</h3>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+          <a href="">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>Contact us</h3>
+          <div>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            48 Dream House, Dreammy Street, 7131 Dreamville, USA
+          </div>
+          <div>
+            <span><i class="far fa-envelope"></i></span>
+            Naturefood12345@gmail.com
+          </div>
+          <div>
+            <span><i class="fas fa-phone"></i></span>
+            4842000101
+          </div>
+          <a href="payment.html">
+            <div class="payment-methods">
+              <img src="./images/payment.png" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Nature Food &copy;2021 | All Rights Reserved!
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Section END -->
+
+  <!-- ======== SwiperJS ======= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+  <!-- Custom Scripts -->
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+
+</html>
